@@ -20,13 +20,10 @@ Developed by: bharath
 RegisterNumber: 21500449
 import numpy as np
 import matplotlib.pyplot as plt
-# Preprocessing Input data
 
 X = np.array(eval(input()))
 Y = np.array(eval(input()))
 
-# Building the model
-# write your code here
 Xmean=np.mean(X)
 Ymean=np.mean(Y)
 num,den=0,0
@@ -39,15 +36,12 @@ c=Ymean-m*Xmean
 
 print (m, c)
 
-#Predict the output
 Y_pred=m*X+c
 print(Y_pred)
 
-#Plotting the graph
 plt.scatter(X,Y)
 plt.plot(X,Y_pred, color= "red")
 plt.show()
-
 ```
 ## Sample Input and Output
 ![inp](./op.png)
